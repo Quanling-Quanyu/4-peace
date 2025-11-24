@@ -1,0 +1,89 @@
+/* pages/diary/diary.wxss */
+.container {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 40rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-button {
+  background: #667eea;
+  color: #ffffff;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  padding: 20rpx 40rpx;
+}
+
+.diary-list {
+  margin-bottom: 40rpx;
+}
+
+.diary-item {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.diary-date {
+  margin-bottom: 20rpx;
+}
+
+.date-text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.diary-card {
+  padding: 20rpx;
+  border-radius: 12rpx;
+  margin-bottom: 20rpx;
+}
+
+.card-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.diary-note {
+  padding-top: 20rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.note-text {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.empty-state {
+  text-align: center;
+  padding-top: 200rpx;
+}
+
+.empty-text {
+  display: block;
+  font-size: 32rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+
+.empty-hint {
+  display: block;
+  font-size: 24rpx;
+  color: #ccc;
+}
