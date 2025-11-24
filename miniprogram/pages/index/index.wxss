@@ -1,0 +1,90 @@
+/* pages/index/index.wxss */
+.container {
+  padding: 40rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #f0f0f0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  margin-bottom: 60rpx;
+}
+
+.card-placeholder {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.card-number {
+  font-size: 32rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.button-group {
+  margin-bottom: 40rpx;
+}
+
+.primary-button, .secondary-button {
+  width: 100%;
+  margin-bottom: 20rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+}
+
+.primary-button {
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+  color: #ffffff;
+}
+
+.secondary-button {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16rpx;
+  margin: 0 10rpx;
+  backdrop-filter: blur(10px);
+}
+
+.menu-item text {
+  color: #ffffff;
+  font-size: 28rpx;
+}
