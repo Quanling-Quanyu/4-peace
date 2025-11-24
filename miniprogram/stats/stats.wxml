@@ -1,0 +1,42 @@
+<!--pages/stats/stats.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">統計數據</text>
+    <text class="subtitle">本月抽卡記錄</text>
+  </view>
+
+  <view class="stats-summary">
+    <view class="stat-item">
+      <text class="stat-number">{{totalDraws}}</text>
+      <text class="stat-label">總抽卡次數</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{uniqueCards}}</text>
+      <text class="stat-label">不同卡片</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">{{thisMonth}}</text>
+      <text class="stat-label">本月次數</text>
+    </view>
+  </view>
+
+  <view class="card-frequency">
+    <text class="section-title">卡片頻率</text>
+    <view class="frequency-list">
+      <view class="frequency-item" wx:for="{{cardStats}}" wx:key="name">
+        <view class="frequency-bar" style="background: {{item.color}}; width: {{item.percentage}}%"></view>
+        <view class="frequency-info">
+          <text class="frequency-name">{{item.name}}</text>
+          <text class="frequency-count">{{item.count}}次</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="insights">
+    <text class="section-title">本月洞察</text>
+    <view class="insight-card">
+      <text class="insight-text">{{monthlyInsight}}</text>
+    </view>
+  </view>
+</view>
