@@ -1,0 +1,26 @@
+<!--pages/diary/diary.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">禪卡日記</text>
+    <button class="add-button" bindtap="addNew">+ 新增</button>
+  </view>
+
+  <view class="diary-list">
+    <view class="diary-item" wx:for="{{diaryEntries}}" wx:key="index" bindtap="viewDetail" data-index="{{index}}">
+      <view class="diary-date">
+        <text class="date-text">{{item.dateFormatted}}</text>
+      </view>
+      <view class="diary-card" style="background: {{item.card.color}}">
+        <text class="card-name">{{item.card.name}}</text>
+      </view>
+      <view class="diary-note">
+        <text class="note-text">{{item.note || '無筆記'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="empty-state" wx:if="{{diaryEntries.length === 0}}">
+    <text class="empty-text">還沒有日記記錄</text>
+    <text class="empty-hint">抽取禪卡後可以記錄到日記</text>
+  </view>
+</view>
