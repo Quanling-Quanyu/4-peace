@@ -145,5 +145,41 @@
 **問題與注意事項：**
 - 無
 
+- ### 2025-11-24 下午工作完成
+
+**已完成項目：** ✅
+
+1. **Azure Storage Account 建立完成**
+   - 儲存體帳戶名稱：4peacestore
+   - 資源群組：4-peace-rg
+   - 區域：East Asia
+   - 效能層級：標準 (Standard)
+   - 複寫類型：本地備援儲存體 (LRS)
+   - 帳戶種類：StorageV2 (一般用途 v2)
+   - 部署狀態：成功 ✅
+   - 建立時間：2025/11/24 上午11:57:23
+
+2. **Azure 預算警示設定完成**
+   - 預算名稱：4peace-budget
+   - 預算範圍：Azure subscription 1
+   - 預算金額：$10 USD/月
+   - 重設期間：每月 (Monthly)
+   - 警示設定：
+     - 警示 1：達到預算 80% ($8) 時發送郵件
+     - 警示 2：達到預算 100% ($10) 時發送郵件
+   - 警示收件者：stu3410@yahoo.com.tw
+   - 狀態：已啟用 ✅
+
+**目前 GitHub 狀態：**
+- 總提交次數：7 commits
+- 專案檔案結構完整
+- Azure 雲端資源就緒
+
+**下一批次工作：**
+1. 建立 pages 資料夾結構（index, meditation, cards, diary, stats）
+2. 為每個頁面建立基礎檔案（.wxml, .wxss, .js, .json）
+3. 實作卡片抽取功能
+4. 設定 Azure Functions 後端 API
+
 **工作時間：**
 - 約 1 小時（專案初始化與基礎架構搭建）
