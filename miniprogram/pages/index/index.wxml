@@ -1,0 +1,27 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">4-Peace 禪卡抽牌</text>
+    <text class="subtitle">八色脈輪禪卡線上抽牌系統</text>
+  </view>
+
+  <view class="card-grid">
+    <view class="card-placeholder" wx:for="{{8}}" wx:key="*this">
+      <text class="card-number">{{index + 1}}</text>
+    </view>
+  </view>
+
+  <view class="button-group">
+    <button class="primary-button" bindtap="drawCard">開始抽牌</button>
+    <button class="secondary-button" bindtap="goToMeditation">冥想準備</button>
+  </view>
+
+  <view class="menu">
+    <navigator url="/pages/diary/diary" class="menu-item">
+      <text>日記</text>
+    </navigator>
+    <navigator url="/pages/stats/stats" class="menu-item">
+      <text>統計</text>
+    </navigator>
+  </view>
+</view>
