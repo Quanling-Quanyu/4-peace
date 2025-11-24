@@ -83,3 +83,67 @@
 ---
 
 **更新日期**: 2025-11-24  
+
+
+### 2025-11-24 更新
+
+**已完成的工作：**
+
+#### GitHub 專案設置
+- ✅ 建立 GitHub 專案倉庫 "4-peace"
+- ✅ 配置 .gitignore (Node 模板) 和 README.md
+- ✅ 建立 progress.md 工作進度追蹤檔案
+  - 包含 5 個開發階段大綱
+  - 包含每日進度記錄框架
+  - 包含技術堆疊說明
+- ✅ 更新 README.md 為完整專案說明文件
+  - 添加專案簡介與特色（含表情符號）
+  - 添加技術棧說明
+  - 添加完整的專案結構圖
+  - 添加功能特色詳解
+  - 添加開發指南
+
+#### 微信小程序核心檔案
+- ✅ 建立 `miniprogram/app.json`
+  - 配置 5 個頁面：index, meditation, cards, diary, stats
+  - 設定視窗樣式與導航欄
+  - 配置懶加載優化
+- ✅ 建立 `miniprogram/app.js`
+  - 實作八色禪卡全局數據（紅、橙、黃、綠、粉、藍、紫、白）
+  - 實作抽牌功能（不重複随機抽取8張）
+  - 實作本地存儲功能
+  - 實作日期檢查功能
+  - 實作日期格式化函數
+- ✅ 建立 `miniprogram/app.wxss`
+  - 全局樣式配置
+  - 按鈕通用樣式 (btn-primary, btn-secondary)
+  - 牌面通用樣式 (card)
+  - 文字通用樣式
+
+#### Azure 雲端設置
+- ✅ 建立 Azure 資源群組 "4-peace-rg"
+  - 區域：East Asia
+  - 訂用帳戶：Azure subscription 1
+
+**當前專案狀態：**
+- GitHub Commits: 6 個提交
+- 檔案結構：
+  - miniprogram/ (包含 app.json, app.js, app.wxss)
+  - README.md (完整專案說明)
+  - progress.md (工作進度追蹤)
+  - .gitignore
+
+**下一步工作：**
+1. 建立 pages 資料夾結構和基礎頁面檔案
+2. 建立 Azure Storage Account
+   - Table Storage 用於數據儲存
+   - Blob Storage 用於圖片儲存
+3. 設定 Azure 預算警示（每月上限 10 元台幣）
+4. 建立 Azure Functions 用於後端 API
+5. 實作微信小程序頁面功能
+
+**問題與注意事項：**
+- 無
+
+**工作時間：**
+- 約 1 小時（專案初始化與基礎架構搭建）
