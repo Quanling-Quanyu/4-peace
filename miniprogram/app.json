@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/meditation/meditation",
-    "pages/cards/cards",
-    "pages/diary/diary",
-    "pages/stats/stats"
+    "meditation/meditation",
+        "cards/cards",
+        "diary/diary",
+        "stats/stats"
   ],
   "window": {
     "backgroundTextStyle": "light",
