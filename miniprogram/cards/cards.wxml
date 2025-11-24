@@ -1,0 +1,33 @@
+<!--pages/cards/cards.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">抽取禪卡</text>
+    <text class="subtitle">專注您的問題，選擇一張牌</text>
+  </view>
+
+  <view class="cards-display">
+    <view class="card-item {{item.flipped ? 'flipped' : ''}}" 
+          wx:for="{{cards}}" 
+          wx:key="id" 
+          bindtap="flipCard" 
+          data-id="{{item.id}}">
+      <view class="card-front">
+        <text class="card-back-text">?</text>
+      </view>
+      <view class="card-back" style="background: {{item.color}}">
+        <text class="card-name">{{item.name}}</text>
+        <text class="card-chakra">{{item.chakra}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="result-section" wx:if="{{selectedCard}}">
+    <view class="result-card" style="background: {{selectedCard.color}}">
+      <text class="result-title">{{selectedCard.name}}</text>
+      <text class="result-description">{{selectedCard.description}}</text>
+    </view>
+    
+    <button class="save-button" bindtap="saveDiary">記錄到日記</button>
+    <button class="reset-button" bindtap="reset">重新抽牌</button>
+  </view>
+</view>
