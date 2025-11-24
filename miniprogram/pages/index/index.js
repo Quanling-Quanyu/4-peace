@@ -13,14 +13,14 @@ Page({
   drawCard() {
     // 跳轉到卡片抽取頁面
     wx.navigateTo({
-      url: '/pages/cards/cards'
+            url: '/cards/cards'
     })
   },
 
   goToMeditation() {
     // 跳轉到冥想準備頁面
     wx.navigateTo({
-      url: '/pages/meditation/meditation'
+            url: '/meditation/meditation'
     })
   },
 
