@@ -1,0 +1,128 @@
+/* pages/stats/stats.wxss */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  padding: 40rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.stats-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60rpx;
+}
+
+.stat-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30rpx;
+  border-radius: 16rpx;
+  backdrop-filter: blur(10px);
+  flex: 1;
+  margin: 0 10rpx;
+}
+
+.stat-number {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10rpx;
+}
+
+.stat-label {
+  display: block;
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.card-frequency {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 40rpx;
+  border-radius: 16rpx;
+  margin-bottom: 40rpx;
+  backdrop-filter: blur(10px);
+}
+
+.section-title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30rpx;
+}
+
+.frequency-list {
+  /* 列表容器 */
+}
+
+.frequency-item {
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.frequency-bar {
+  height: 60rpx;
+  border-radius: 30rpx;
+  transition: width 0.5s;
+}
+
+.frequency-info {
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frequency-name {
+  font-size: 28rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.frequency-count {
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.insights {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 40rpx;
+  border-radius: 16rpx;
+  backdrop-filter: blur(10px);
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30rpx;
+  border-radius: 12rpx;
+}
+
+.insight-text {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.8;
+}
